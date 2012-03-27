@@ -1,0 +1,19 @@
+#!/bin/sh
+
+# ensure we have the prerequisites (ssh command, port, ...)
+source ./_setup || exit 1
+
+port=`cat ~/.selenium_port`
+ssh_command=`cat ~/.ssh_command`
+
+echo
+echo "Forwarding port: $port to localhost"
+$ssh_command -TN -R $port:localhost:4444 >/dev/null /2>&1 &
+# Get pid of ssh background process -- tricky
+ssh_pid=`ps -o "pid command" | grep "$ssh_command" | head -n 1 | awk '{print $1}'`
+# kill the ssh process on exit
+trap "kill $ssh_pid" EXIT
+
+echo
+echo Launching Selenium...
+java -jar selenium-server-standalone* -firefoxProfileTemplate ./firefox-profile/
