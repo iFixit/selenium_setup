@@ -9,8 +9,8 @@ ssh_command=`cat ~/.ssh_command`
 echo
 echo "Forwarding port: $port to localhost"
 $ssh_command -TN -R $port:localhost:4444 >/dev/null /2>&1 &
-# Get pid of ssh background process -- tricky
-ssh_pid=`ps -o "pid command" | grep "$ssh_command" | head -n 1 | awk '{print $1}'`
+# Get pid of ssh background process
+ssh_pid=$!
 # kill the ssh process on exit
 trap "kill $ssh_pid" EXIT
 
