@@ -8,23 +8,23 @@ Arch:x86_64-gcc3:$
 npgtpo3dautoplugin.plugin:$
 /Library/Internet Plug-Ins/npgtpo3dautoplugin.plugin:$
 0.1.44.15:$
-1331927423000:0:1:$
+1336699819000:0:1:$
 Google Talk Plugin Video Accelerator version:0.1.44.15:$
 Google Talk Plugin Video Accelerator:$
 1
 0:application/vnd.gtpo3d.auto:Google Talk Plugin Video Accelerator Type::$
 googletalkbrowserplugin.plugin:$
 /Library/Internet Plug-Ins/googletalkbrowserplugin.plugin:$
-2.8.5.6620:$
-1331927423000:0:1:$
-Version 2.8.5.6620:$
+2.9.10.7526:$
+1336699818000:0:1:$
+Version 2.9.10.7526:$
 Google Talk NPAPI Plugin:$
 1
 0:application/googletalk:Google voice and video chat:googletalk:$
 Google Earth Web Plug-in.plugin:$
 /Library/Internet Plug-Ins/Google Earth Web Plug-in.plugin:$
 6.1:$
-1317554897000:0:1:$
+1317554897000:0:5:$
 The Google Earth Plugin allows you to view 3D imagery and terrain in your web browser.:$
 Google Earth Plug-in:$
 1
@@ -32,7 +32,7 @@ Google Earth Plug-in:$
 Silverlight.plugin:$
 /Library/Internet Plug-Ins/Silverlight.plugin:$
 4.0.60831.0:$
-1314756498000:0:1:$
+1314756498000:0:5:$
 4.0.60831.0:$
 Silverlight Plug-In:$
 2
@@ -41,7 +41,7 @@ Silverlight Plug-In:$
 QuickTime Plugin.plugin:$
 /Library/Internet Plug-Ins/QuickTime Plugin.plugin:$
 7.6.6:$
-1309494087000:0:1:$
+1309494087000:0:5:$
 The QuickTime Plugin allows you to view a wide variety of multimedia content in web pages. For more information, visit the <A HREF=http://www.apple.com/quicktime>QuickTime</A> Web site.:$
 QuickTime Plug-in 7.6.6:$
 59
@@ -107,7 +107,7 @@ QuickTime Plug-in 7.6.6:$
 JavaPlugin2_NPAPI.plugin:$
 /System/Library/Java/Support/Deploy.bundle/Contents/Resources/JavaPlugin2_NPAPI.plugin:$
 13.5.0:$
-1308351689000:0:1:$
+1308351689000:0:4:$
 Java Plug-In 2 for NPAPI Browsers:$
 Java Plug-In 2 for NPAPI Browsers:$
 17
@@ -131,16 +131,16 @@ Java Plug-In 2 for NPAPI Browsers:$
 iPhotoPhotocast.plugin:$
 /Library/Internet Plug-Ins/iPhotoPhotocast.plugin:$
 7.0:$
-1295612324000:0:1:$
+1295612324000:0:5:$
 iPhoto6:$
 iPhotoPhotocast:$
 1
 0:application/photo:iPhoto 700::$
 
 [INVALID]
-/Library/Internet Plug-Ins/Quartz Composer.webplugin:$
-1264567773000:$
-/Library/Internet Plug-Ins/nsIQTScriptablePlugin.xpt:$
-1301419114000:$
 /System/Library/Frameworks/JavaVM.framework/Versions/A/JavaPluginCocoa.bundle:$
 1307133497000:$
+/Library/Internet Plug-Ins/nsIQTScriptablePlugin.xpt:$
+1301419114000:$
+/Library/Internet Plug-Ins/Quartz Composer.webplugin:$
+1264567773000:$
