@@ -6,46 +6,49 @@
  * the changes will be overwritten when the application exits.
  *
  * To make a manual change to preferences, you can visit the URL about:config
- * For more information, see http://www.mozilla.org/unix/customizing.html#prefs
  */
 
-user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1339113319);
-user_pref("app.update.lastUpdateTime.background-update-timer", 1339113559);
-user_pref("app.update.lastUpdateTime.blocklist-background-update-timer", 1339113439);
-user_pref("app.update.lastUpdateTime.search-engine-update-timer", 1339113119);
+user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1341352208);
+user_pref("app.update.lastUpdateTime.background-update-timer", 1341352448);
+user_pref("app.update.lastUpdateTime.blocklist-background-update-timer", 1341352328);
+user_pref("app.update.lastUpdateTime.search-engine-update-timer", 1341352088);
 user_pref("browser.bookmarks.restore_default_bookmarks", false);
 user_pref("browser.cache.disk.capacity", 1048576);
 user_pref("browser.cache.disk.smart_size.first_run", false);
 user_pref("browser.cache.disk.smart_size_cached_value", 1048576);
-user_pref("browser.migration.version", 5);
-user_pref("browser.places.smartBookmarksVersion", 2);
+user_pref("browser.migration.version", 6);
+user_pref("browser.places.smartBookmarksVersion", 3);
 user_pref("browser.preferences.advanced.selectedTabIndex", 3);
 user_pref("browser.rights.3.shown", true);
 user_pref("browser.shell.checkDefaultBrowser", false);
-user_pref("browser.startup.homepage_override.buildID", "20120312181643");
-user_pref("browser.startup.homepage_override.mstone", "rv:11.0");
+user_pref("browser.startup.homepage_override.buildID", "20120614114901");
+user_pref("browser.startup.homepage_override.mstone", "13.0.1");
+user_pref("browser.syncPromoViewsLeft", 0);
 user_pref("devtools.inspector.htmlHeight", 274);
-user_pref("extensions.blocklist.pingCountTotal", 6);
+user_pref("devtools.inspector.sidebarOpen", true);
+user_pref("extensions.blocklist.pingCountTotal", 9);
 user_pref("extensions.blocklist.pingCountVersion", 2);
 user_pref("extensions.bootstrappedAddons", "{}");
 user_pref("extensions.databaseSchema", 12);
-user_pref("extensions.enabledAddons", "{972ce4c6-7e08-4474-a285-3208198ce6fd}:11.0");
-user_pref("extensions.installCache", "[{\"name\":\"app-global\",\"addons\":{\"{972ce4c6-7e08-4474-a285-3208198ce6fd}\":{\"descriptor\":\"/Applications/Firefox.app/Contents/MacOS/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}\",\"mtime\":1336692497000}}}]");
-user_pref("extensions.lastAppVersion", "11.0");
-user_pref("extensions.lastPlatformVersion", "11.0");
+user_pref("extensions.enabledAddons", "{972ce4c6-7e08-4474-a285-3208198ce6fd}:13.0.1");
+user_pref("extensions.installCache", "[{\"name\":\"app-global\",\"addons\":{\"{972ce4c6-7e08-4474-a285-3208198ce6fd}\":{\"descriptor\":\"/Applications/Firefox.app/Contents/MacOS/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}\",\"mtime\":1341351965000}}}]");
+user_pref("extensions.lastAppVersion", "13.0.1");
+user_pref("extensions.lastPlatformVersion", "13.0.1");
 user_pref("extensions.pendingOperations", false);
 user_pref("extensions.shownSelectionUI", true);
-user_pref("idle.lastDailyNotification", 1335824936);
+user_pref("idle.lastDailyNotification", 1341354020);
 user_pref("intl.charsetmenu.browser.cache", "UTF-8");
 user_pref("network.cookie.prefsMigrated", true);
-user_pref("places.database.lastMaintenance", 1335824936);
+user_pref("permissions.default.image", 2);
+user_pref("places.database.lastMaintenance", 1340996321);
 user_pref("places.history.expiration.transient_current_max_pages", 104858);
 user_pref("privacy.sanitize.migrateFx3Prefs", true);
 user_pref("security.disable_button.openCertManager", false);
 user_pref("storage.vacuum.last.index", 1);
-user_pref("storage.vacuum.last.places.sqlite", 1333510420);
+user_pref("storage.vacuum.last.places.sqlite", 1340996321);
+user_pref("toolkit.startup.last_success", 1341351966);
 user_pref("toolkit.telemetry.prompted", 2);
 user_pref("toolkit.telemetry.rejected", true);
-user_pref("urlclassifier.keyupdatetime.https://sb-ssl.google.com/safebrowsing/newkey", 1341705011);
+user_pref("urlclassifier.keyupdatetime.https://sb-ssl.google.com/safebrowsing/newkey", 1345962369);
 user_pref("xpinstall.whitelist.add", "");
 user_pref("xpinstall.whitelist.add.36", "");
