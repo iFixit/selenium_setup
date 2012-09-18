@@ -7,7 +7,7 @@ port=`cat ~/.selenium_port`
 ssh_command=`cat ~/.ssh_command`
 
 echo
-echo "Forwarding port: $port to localhost"
+echo "Forwarding port: remote:$port to localhost:4444"
 ssh_line="$ssh_command -TNf -R $port:localhost:4444"
 $ssh_line >/dev/null /2>&1
 # Get pid of ssh background process -- tricky
