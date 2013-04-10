@@ -5,43 +5,66 @@ Version:0.15:$
 Arch:x86_64-gcc3:$
 
 [PLUGINS]
+o1dbrowserplugin.plugin:$
+/Library/Internet Plug-Ins/o1dbrowserplugin.plugin:$
+3.17.0.12440:$
+1364262284000:0:1:$
+Version 3.17.0.12440:$
+Google Talk Plugin Video Renderer:$
+1
+0:application/o1d:Google Talk Plugin Video Renderer:o1d:$
+googletalkbrowserplugin.plugin:$
+/Library/Internet Plug-Ins/googletalkbrowserplugin.plugin:$
+3.17.0.12440:$
+1364262284000:0:1:$
+Version 3.17.0.12440:$
+Google Talk Plugin:$
+1
+0:application/googletalk:Google voice and video chat:googletalk:$
 npgtpo3dautoplugin.plugin:$
 /Library/Internet Plug-Ins/npgtpo3dautoplugin.plugin:$
-0.1.44.15:$
-1336699819000:0:1:$
-Google Talk Plugin Video Accelerator version:0.1.44.15:$
+0.1.44.24:$
+1364260739000:0:1:$
+Google Talk Plugin Video Accelerator version:0.1.44.24:$
 Google Talk Plugin Video Accelerator:$
 1
 0:application/vnd.gtpo3d.auto:Google Talk Plugin Video Accelerator Type::$
-googletalkbrowserplugin.plugin:$
-/Library/Internet Plug-Ins/googletalkbrowserplugin.plugin:$
-2.9.10.7526:$
-1336699818000:0:1:$
-Version 2.9.10.7526:$
-Google Talk NPAPI Plugin:$
-1
-0:application/googletalk:Google voice and video chat:googletalk:$
+JavaAppletPlugin.plugin:$
+/System/Library/Java/Support/CoreDeploy.bundle/Contents/JavaAppletPlugin.plugin:$
+13.9.3:$
+1362185749000:0:1:$
+Displays Java applet content, or a placeholder if Java is not installed.:$
+Java Applet Plug-in:$
+17
+0:application/x-java-applet;version=1.1.3:Java applet::$
+1:application/x-java-applet:Basic Java Applets:javaapplet:$
+2:application/x-java-applet;version=1.2.2:Java applet::$
+3:application/x-java-applet;version=1.5:Java applet::$
+4:application/x-java-vm:Java applet::$
+5:application/x-java-applet;version=1.3.1:Java applet::$
+6:application/x-java-applet;version=1.3:Java applet::$
+7:application/x-java-applet;version=1.1.2:Java applet::$
+8:application/x-java-applet;version=1.1:Java applet::$
+9:application/x-java-vm-npruntime:Java applet::$
+10:application/x-java-applet;version=1.2.1:Java applet::$
+11:application/x-java-applet;version=1.6:Java applet::$
+12:application/x-java-applet;version=1.4.2:Java applet::$
+13:application/x-java-applet;jpi-version=1.6.0_43:Java applet::$
+14:application/x-java-applet;version=1.4:Java applet::$
+15:application/x-java-applet;version=1.1.1:Java applet::$
+16:application/x-java-applet;version=1.2:Java applet::$
 Google Earth Web Plug-in.plugin:$
 /Library/Internet Plug-Ins/Google Earth Web Plug-in.plugin:$
-6.1:$
-1317554897000:0:5:$
+7.0:$
+1361982375000:0:1:$
 The Google Earth Plugin allows you to view 3D imagery and terrain in your web browser.:$
 Google Earth Plug-in:$
 1
 0:application/geplugin:Google Earth browser plugin::$
-Silverlight.plugin:$
-/Library/Internet Plug-Ins/Silverlight.plugin:$
-4.0.60831.0:$
-1314756498000:0:5:$
-4.0.60831.0:$
-Silverlight Plug-In:$
-2
-0:application/x-silverlight:Microsoft Silverlight:xaml:$
-1:application/x-silverlight-2:Microsoft Silverlight:xaml:$
 QuickTime Plugin.plugin:$
 /Library/Internet Plug-Ins/QuickTime Plugin.plugin:$
 7.6.6:$
-1309494087000:0:5:$
+1357886890000:0:1:$
 The QuickTime Plugin allows you to view a wide variety of multimedia content in web pages. For more information, visit the <A HREF=http://www.apple.com/quicktime>QuickTime</A> Web site.:$
 QuickTime Plug-in 7.6.6:$
 59
@@ -104,43 +127,45 @@ QuickTime Plug-in 7.6.6:$
 56:image/jpeg2000-image:JPEG2000 image:jp2:$
 57:audio/wav:WAVE audio:wav,bwf:$
 58:audio/vnd.qcelp:QUALCOMM PureVoice audio:qcp,qcp:$
-JavaPlugin2_NPAPI.plugin:$
-/System/Library/Java/Support/Deploy.bundle/Contents/Resources/JavaPlugin2_NPAPI.plugin:$
-13.5.0:$
-1308351689000:0:4:$
-Java Plug-In 2 for NPAPI Browsers:$
-Java Plug-In 2 for NPAPI Browsers:$
-17
-0:application/x-java-applet;version=1.1.3:Java applet::$
-1:application/x-java-applet:Basic Java Applets:javaapplet:$
-2:application/x-java-applet;version=1.2.2:Java applet::$
-3:application/x-java-applet;version=1.5:Java applet::$
-4:application/x-java-vm:Java applet::$
-5:application/x-java-applet;version=1.3.1:Java applet::$
-6:application/x-java-applet;version=1.3:Java applet::$
-7:application/x-java-applet;version=1.1.2:Java applet::$
-8:application/x-java-applet;version=1.1:Java applet::$
-9:application/x-java-applet;version=1.2.1:Java applet::$
-10:application/x-java-applet;version=1.6:Java applet::$
-11:application/x-java-applet;version=1.4.2:Java applet::$
-12:application/x-java-applet;jpi-version=1.6.0_26:Java applet::$
-13:application/x-java-applet;version=1.4:Java applet::$
-14:application/x-java-applet;version=1.1.1:Java applet::$
-15:application/x-java-applet;version=1.2:Java applet::$
-16:application/x-java-vm-npruntime:::$
+CitrixOnlineWebDeploymentPlugin.plugin:$
+/Users/danielbeardsley/Library/Internet Plug-Ins/CitrixOnlineWebDeploymentPlugin.plugin:$
+1.0.92:$
+1355959350000:0:1:$
+Plugin that detects installed Citrix Online products (visit www.citrixonline.com).:$
+Citrix Online Web Deployment Plugin 1.0.0.92:$
+1
+0:application/x-col-application-detector:Citrix Online Application Detector::$
+Flash Player.plugin:$
+/Library/Internet Plug-Ins/Flash Player.plugin:$
+11.5.502.110:$
+1354085721000:0:1:$
+Shockwave Flash 11.5 r502:$
+Shockwave Flash:$
+2
+0:application/x-shockwave-flash:Shockwave Flash:swf:$
+1:application/futuresplash:FutureSplash Player:spl:$
+Silverlight.plugin:$
+/Library/Internet Plug-Ins/Silverlight.plugin:$
+5.1.10411.0:$
+1334127450000:0:1:$
+5.1.10411.0:$
+Silverlight Plug-In:$
+2
+0:application/x-silverlight:Microsoft Silverlight:xaml:$
+1:application/x-silverlight-2:Microsoft Silverlight:xaml:$
 iPhotoPhotocast.plugin:$
 /Library/Internet Plug-Ins/iPhotoPhotocast.plugin:$
 7.0:$
-1295612324000:0:5:$
+1332318699000:0:1:$
 iPhoto6:$
 iPhotoPhotocast:$
 1
 0:application/photo:iPhoto 700::$
 
 [INVALID]
-/System/Library/Frameworks/JavaVM.framework/Versions/A/JavaPluginCocoa.bundle:$
-1307133497000:$
+/Library/Internet Plug-Ins/Quartz Composer.webplugin:$
+1301419115000:$
+/Library/Internet Plug-Ins/flashplayer.xpt:$
+1351474337000:$
 /Library/Internet Plug-Ins/nsIQTScriptablePlugin.xpt:$
 1301419114000:$
-/Library/Internet Plug-Ins/Quartz Composer.webplugin:$
-1264567773000:$

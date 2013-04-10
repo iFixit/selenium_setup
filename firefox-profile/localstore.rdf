@@ -1,22 +1,45 @@
 <?xml version="1.0"?>
 <RDF:RDF xmlns:NC="http://home.netscape.com/NC-rdf#"
          xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <RDF:Description RDF:about="chrome://browser/content/preferences/preferences.xul#BrowserPreferences"
-                   screenX="336"
-                   screenY="137"
-                   lastSelected="paneAdvanced" />
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#sidebar-title"
+                   value="" />
+  <RDF:Description RDF:about="chrome://browser/content/sanitize.xul#detailsExpander"
+                   class="expander-up" />
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul">
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#main-window"/>
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#sidebar-box"/>
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#sidebar-title"/>
+  </RDF:Description>
   <RDF:Description RDF:about="chrome://pippki/content/certManager.xul#lifetimecol"
                    ordinal="5" />
-  <RDF:Description RDF:about="chrome://pippki/content/certManager.xul#serialnumcol"
-                   ordinal="5" />
+  <RDF:Description RDF:about="chrome://pippki/content/certManager.xul#certmanager"
+                   screenX="318"
+                   screenY="224"
+                   width="648"
+                   height="374" />
+  <RDF:Description RDF:about="chrome://pippki/content/certManager.xul#issuedcol"
+                   ordinal="7" />
   <RDF:Description RDF:about="chrome://browser/content/browser.xul#main-window"
                    screenX="4"
                    screenY="22"
                    sizemode="normal"
                    width="1173"
                    height="961" />
-  <RDF:Description RDF:about="chrome://browser/content/browser.xul#sidebar-title"
-                   value="" />
+  <RDF:Description RDF:about="chrome://pippki/content/exceptionDialog.xul#exceptiondialog"
+                   screenX="336"
+                   screenY="47"
+                   width="501"
+                   height="480" />
+  <RDF:Description RDF:about="chrome://pippki/content/certManager.xul#sitecol"
+                   ordinal="3" />
+  <RDF:Description RDF:about="chrome://browser/content/sanitize.xul#SanitizeDialog"
+                   screenX="1100"
+                   screenY="644" />
+  <RDF:Description RDF:about="chrome://browser/content/sanitize.xul">
+    <NC:persist RDF:resource="chrome://browser/content/sanitize.xul#detailsExpander"/>
+    <NC:persist RDF:resource="chrome://browser/content/sanitize.xul#itemList"/>
+    <NC:persist RDF:resource="chrome://browser/content/sanitize.xul#SanitizeDialog"/>
+  </RDF:Description>
   <RDF:Description RDF:about="chrome://pippki/content/certManager.xul">
     <NC:persist RDF:resource="chrome://pippki/content/certManager.xul#certcol"/>
     <NC:persist RDF:resource="chrome://pippki/content/certManager.xul#tokencol"/>
@@ -28,37 +51,30 @@
     <NC:persist RDF:resource="chrome://pippki/content/certManager.xul#certmanagertabs"/>
     <NC:persist RDF:resource="chrome://pippki/content/certManager.xul#certmanager"/>
   </RDF:Description>
-  <RDF:Description RDF:about="chrome://pippki/content/exceptionDialog.xul#exceptiondialog"
-                   screenX="336"
-                   screenY="47"
-                   width="501"
-                   height="480" />
-  <RDF:Description RDF:about="chrome://pippki/content/certManager.xul#tokencol"
-                   ordinal="3" />
-  <RDF:Description RDF:about="chrome://browser/content/preferences/preferences.xul">
-    <NC:persist RDF:resource="chrome://browser/content/preferences/preferences.xul#BrowserPreferences"/>
-  </RDF:Description>
+  <RDF:Description RDF:about="chrome://pippki/content/certManager.xul#serialnumcol"
+                   ordinal="5" />
   <RDF:Description RDF:about="chrome://pippki/content/certManager.xul#certmanagertabs"
                    selectedIndex="2" />
+  <RDF:Description RDF:about="chrome://browser/content/sanitize.xul#itemList"
+                   collapsed="false" />
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#sidebar-box"
+                   sidebarcommand=""
+                   width=""
+                   src="" />
   <RDF:Description RDF:about="chrome://pippki/content/exceptionDialog.xul">
     <NC:persist RDF:resource="chrome://pippki/content/exceptionDialog.xul#exceptiondialog"/>
   </RDF:Description>
   <RDF:Description RDF:about="chrome://pippki/content/certManager.xul#expiredcol"
                    ordinal="9" />
-  <RDF:Description RDF:about="chrome://browser/content/browser.xul">
-    <NC:persist RDF:resource="chrome://browser/content/browser.xul#main-window"/>
-    <NC:persist RDF:resource="chrome://browser/content/browser.xul#sidebar-box"/>
-    <NC:persist RDF:resource="chrome://browser/content/browser.xul#sidebar-title"/>
-  </RDF:Description>
   <RDF:Description RDF:about="chrome://pippki/content/certManager.xul#certcol"
                    ordinal="1" />
-  <RDF:Description RDF:about="chrome://pippki/content/certManager.xul#sitecol"
+  <RDF:Description RDF:about="chrome://browser/content/preferences/preferences.xul">
+    <NC:persist RDF:resource="chrome://browser/content/preferences/preferences.xul#BrowserPreferences"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://browser/content/preferences/preferences.xul#BrowserPreferences"
+                   screenX="336"
+                   screenY="137"
+                   lastSelected="panePrivacy" />
+  <RDF:Description RDF:about="chrome://pippki/content/certManager.xul#tokencol"
                    ordinal="3" />
-  <RDF:Description RDF:about="chrome://pippki/content/certManager.xul#certmanager"
-                   screenX="318"
-                   screenY="224"
-                   width="648"
-                   height="374" />
-  <RDF:Description RDF:about="chrome://pippki/content/certManager.xul#issuedcol"
-                   ordinal="7" />
 </RDF:RDF>
