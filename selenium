@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # ensure we have the prerequisites (ssh command, port, ...)
-source ./_setup || exit 1
+. ./_setup || exit 1
 
 port=`cat ~/.selenium_port`
 ssh_command=`cat ~/.ssh_command`
