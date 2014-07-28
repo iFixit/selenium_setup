@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Crash if something breaks
+set -e
+
 # ensure we have the prerequisites (ssh command, port, ...)
 . ./_setup || exit 1
 
