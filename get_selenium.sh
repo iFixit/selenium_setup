@@ -5,7 +5,10 @@ curl --remote-name http://chromedriver.storage.googleapis.com/2.9/chromedriver_m
 wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-1.9.7-macosx.zip
 
 unzip phantomjs*.zip
+cp phantomjs-1.9.7-macosx/bin/phantomjs .
+
 rm phantomjs*.zip
+rm -r phantomjs*-macosx
 
 unzip chromedriver_mac32.zip
 rm chromedriver_mac32.zip

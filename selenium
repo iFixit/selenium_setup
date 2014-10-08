@@ -20,4 +20,4 @@ trap "kill $ssh_pid" EXIT
 
 echo
 echo Launching Selenium...
-java -jar selenium-server-standalone* -firefoxProfileTemplate ./firefox-profile/ -Dphantomjs.binary.path=phantomjs*/bin/phantomjs
+java -jar selenium-server-standalone* -firefoxProfileTemplate ./firefox-profile/ -Dphantomjs.binary.path=phantomjs
