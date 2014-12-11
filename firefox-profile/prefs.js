@@ -83,6 +83,7 @@ user_pref("gecko.mstone", "26.0");
 user_pref("general.autoScroll", false);
 user_pref("intl.charsetmenu.browser.cache", "UTF-8");
 user_pref("network.cookie.prefsMigrated", true);
+user_pref("network.proxy.type", 4);
 user_pref("pdfjs.migrationVersion", 1);
 user_pref("pdfjs.previousHandler.alwaysAskBeforeHandling", true);
 user_pref("pdfjs.previousHandler.preferredAction", 4);
