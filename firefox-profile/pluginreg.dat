@@ -5,17 +5,33 @@ Version:0.16:$
 Arch:x86_64-gcc3:$
 
 [PLUGINS]
+o1dbrowserplugin.plugin:$
+/Library/Internet Plug-Ins/o1dbrowserplugin.plugin:$
+5.38.6.0:$
+1414548149000:0:0:$
+Version 5.38.6.0:$
+Google Talk Plugin Video Renderer:$
+1
+0:application/o1d:Google Talk Plugin Video Renderer:o1d:$
+googletalkbrowserplugin.plugin:$
+/Library/Internet Plug-Ins/googletalkbrowserplugin.plugin:$
+5.38.6.0:$
+1414548149000:0:0:$
+Version 5.38.6.0:$
+Google Talk Plugin:$
+1
+0:application/googletalk:Google voice and video chat:googletalk:$
 QuickTime Plugin.plugin:$
 /Library/Internet Plug-Ins/QuickTime Plugin.plugin:$
 7.7.3:$
-1401776112000:0:0:$
+1411150944000:0:0:$
 The QuickTime Plugin allows you to view a wide variety of multimedia content in web pages. For more information, visit the <A HREF=http://www.apple.com/quicktime>QuickTime</A> Web site.:$
 QuickTime Plug-in 7.7.3:$
-40
+38
 0:video/x-msvideo:Video For Windows:avi,vfw:$
-1:audio/mp3:MP3 audio:mp3,swa:$
+1:video/3gpp2:3GPP2 media:3g2,3gp2:$
 2:audio/mpeg3:MP3 audio:mp3,swa:$
-3:video/3gpp2:3GPP2 media:3g2,3gp2:$
+3:audio/mp3:MP3 audio:mp3,swa:$
 4:audio/x-caf:CAF audio:caf:$
 5:audio/mpeg:MPEG audio:mpeg,mpg,m1s,m1a,mp2,mpm,mpa,m2a,mp3,swa:$
 6:video/quicktime:QuickTime Movie:mov,qt,mqv:$
@@ -24,79 +40,68 @@ QuickTime Plug-in 7.7.3:$
 9:application/x-sdp:SDP stream descriptor:sdp:$
 10:audio/wav:WAVE audio:wav,bwf:$
 11:video/avi:Video For Windows:avi,vfw:$
-12:audio/x-ac3:AC3 audio:ac3:$
-13:audio/mp4:MPEG-4 media:mp4:$
-14:video/x-m4v:Video:m4v:$
+12:audio/mp4:MPEG-4 media:mp4:$
+13:video/x-m4v:Video:m4v:$
+14:audio/x-wav:WAVE audio:wav,bwf:$
 15:application/sdp:SDP stream descriptor:sdp:$
-16:audio/x-wav:WAVE audio:wav,bwf:$
-17:audio/x-aiff:AIFF audio:aiff,aif,aifc,cdda:$
-18:video/x-mpeg:MPEG media:mpeg,mpg,m1s,m1v,m1a,m75,m15,mp2,mpm,mpv,mpa:$
-19:video/3gpp:3GPP media:3gp,3gpp:$
-20:video/msvideo:Video For Windows:avi,vfw:$
-21:audio/x-mpeg:MPEG audio:mpeg,mpg,m1s,m1a,mp2,mpm,mpa,m2a,mp3,swa:$
-22:audio/vnd.qcelp:QUALCOMM PureVoice audio:qcp,qcp:$
-23:audio/x-mp3:MP3 audio:mp3,swa:$
-24:application/x-rtsp:RTSP stream descriptor:rtsp,rts:$
-25:audio/amr:AMR audio:AMR:$
-26:video/sd-video:SD video:sdv:$
-27:audio/aiff:AIFF audio:aiff,aif,aifc,cdda:$
-28:video/mpeg:MPEG media:mpeg,mpg,m1s,m1v,m1a,m75,m15,mp2,mpm,mpv,mpa:$
-29:audio/3gpp2:3GPP2 media:3g2,3gp2:$
-30:audio/aac:AAC audio:aac,adts:$
-31:audio/ac3:AC3 audio:ac3:$
-32:audio/x-m4b:AAC audio book:m4b:$
-33:audio/x-m4p:AAC audio:m4p:$
-34:audio/x-gsm:GSM audio:gsm:$
-35:application/x-mpeg:AMC media:amc:$
-36:audio/x-aac:AAC audio:aac,adts:$
-37:audio/basic:uLaw/AU audio:au,snd,ulw:$
-38:audio/x-m4a:AAC audio:m4a:$
-39:audio/3gpp:3GPP media:3gp,3gpp:$
+16:audio/x-aiff:AIFF audio:aiff,aif,aifc,cdda:$
+17:video/x-mpeg:MPEG media:mpeg,mpg,m1s,m1v,m1a,m75,m15,mp2,mpm,mpv,mpa:$
+18:video/3gpp:3GPP media:3gp,3gpp:$
+19:video/msvideo:Video For Windows:avi,vfw:$
+20:audio/x-mpeg:MPEG audio:mpeg,mpg,m1s,m1a,mp2,mpm,mpa,m2a,mp3,swa:$
+21:audio/vnd.qcelp:QUALCOMM PureVoice audio:qcp:$
+22:audio/x-mp3:MP3 audio:mp3,swa:$
+23:application/x-rtsp:RTSP stream descriptor:rtsp,rts:$
+24:audio/AMR:AMR audio:AMR:$
+25:video/sd-video:SD video:sdv:$
+26:audio/aiff:AIFF audio:aiff,aif,aifc,cdda:$
+27:video/mpeg:MPEG media:mpeg,mpg,m1s,m1v,m1a,m75,m15,mp2,mpm,mpv,mpa:$
+28:audio/3gpp2:3GPP2 media:3g2,3gp2:$
+29:audio/aac:AAC audio:aac,adts:$
+30:audio/x-m4b:AAC audio book:m4b:$
+31:audio/x-m4p:AAC audio:m4p:$
+32:audio/x-gsm:GSM audio:gsm:$
+33:application/x-mpeg:AMC media:amc:$
+34:audio/x-aac:AAC audio:aac,adts:$
+35:audio/basic:uLaw/AU audio:au,snd,ulw:$
+36:audio/x-m4a:AAC audio:m4a:$
+37:audio/3gpp:3GPP media:3gp,3gpp:$
 Default Browser.plugin:$
 /Library/Internet Plug-Ins/Default Browser.plugin:$
 537:$
-1401775893000:0:0:$
+1411150944000:0:0:$
 Provides information about the default web browser:$
 Default Browser Helper:$
 1
 0:application/apple-default-browser:Provides information about the default web browser::$
-Unity Web Player.plugin:$
-/Library/Internet Plug-Ins/Unity Web Player.plugin:$
-UnityPlayer version 4.3.7f1:$
-1400815450000:0:0:$
-Unity Web Player version 4.3.7f1. (c) 2013 Unity Technologies ApS. All rights reserved.:$
-Unity Player:$
-1
-0:application/vnd.unity:Unity Player:unity3d:$
 JavaAppletPlugin.plugin:$
 /Library/Internet Plug-Ins/JavaAppletPlugin.plugin:$
-Java 8 Update 05:$
-1395129261000:0:0:$
+Java 8 Update 20:$
+1406754554000:0:0:$
 Displays Java applet content, or a placeholder if Java is not installed.:$
 Java Applet Plug-in:$
-22
-0:application/x-java-applet;version=1.4:Java applet::$
-1:application/x-java-applet;version=1.2.1:Java applet::$
-2:application/x-java-applet;version=1.2.2:Java applet::$
-3:application/x-java-applet;version=1.3:Java applet::$
-4:application/x-java-applet;version=1.8:Java applet::$
-5:application/x-java-vm:Java applet::$
-6:application/x-java-applet;version=1.1.1:Java applet::$
-7:application/x-java-vm-npruntime:Java applet::$
-8:application/x-java-applet;deploy=11.5.2:Java applet::$
-9:application/x-java-applet;version=1.7:Java applet::$
-10:application/x-java-applet;version=1.4.1:Java applet::$
-11:application/x-java-applet;version=1.1.2:Java applet::$
-12:application/x-java-applet:Basic Java Applets:javaapplet:$
-13:application/x-java-applet;jpi-version=1.8.0_05:Java applet::$
-14:application/x-java-applet;javafx=8.0.5:Java applet::$
-15:application/x-java-applet;version=1.2:Java applet::$
-16:application/x-java-applet;version=1.1:Java applet::$
-17:application/x-java-applet;version=1.1.3:Java applet::$
-18:application/x-java-applet;version=1.4.2:Java applet::$
-19:application/x-java-applet;version=1.6:Java applet::$
-20:application/x-java-applet;version=1.3.1:Java applet::$
-21:application/x-java-applet;version=1.5:Java applet::$
+21
+0:application/x-java-applet;version=1.4:Java Applet::$
+1:application/x-java-applet;version=1.2.1:Java Applet::$
+2:application/x-java-applet;version=1.2.2:Java Applet::$
+3:application/x-java-applet;deploy=11.20.2:Java Applet::$
+4:application/x-java-applet;version=1.3:Java Applet::$
+5:application/x-java-applet;javafx=8.0.20:JavaFX Applet::$
+6:application/x-java-applet;jpi-version=1.8.0_20:Java Applet::$
+7:application/x-java-applet;version=1.8:Java Applet::$
+8:application/x-java-applet;version=1.1.1:Java Applet::$
+9:application/x-java-vm:Java Applet::$
+10:application/x-java-applet;version=1.2:Java Applet::$
+11:application/x-java-applet;version=1.7:Java Applet::$
+12:application/x-java-applet;version=1.4.1:Java Applet::$
+13:application/x-java-applet;version=1.1.2:Java Applet::$
+14:application/x-java-applet:Basic Java Applet::$
+15:application/x-java-applet;version=1.1:Java Applet::$
+16:application/x-java-applet;version=1.1.3:Java Applet::$
+17:application/x-java-applet;version=1.6:Java Applet::$
+18:application/x-java-applet;version=1.4.2:Java Applet::$
+19:application/x-java-applet;version=1.3.1:Java Applet::$
+20:application/x-java-applet;version=1.5:Java Applet::$
 Silverlight.plugin:$
 /Library/Internet Plug-Ins/Silverlight.plugin:$
 5.1.30317.0:$
@@ -124,11 +129,13 @@ SharePoint Browser Plug-in:$
 0:application/x-sharepoint:Microsoft Office for Mac SharePoint Browser Plug-in::$
 
 [INVALID]
-/Library/Internet Plug-Ins/SharePointWebKitPlugin.webplugin:$
-1282723860000:$
-/Library/Internet Plug-Ins/Unused:$
-1399139814000:$
-/Library/Internet Plug-Ins/nsIQTScriptablePlugin.xpt:$
-1401776112000:$
+/Users/BaseInfinity/Library/Internet Plug-Ins/BlueStacks Install Detector.plugin:$
+0:$
 /Library/Internet Plug-Ins/Quartz Composer.webplugin:$
 1401776114000:$
+/Library/Internet Plug-Ins/nsIQTScriptablePlugin.xpt:$
+1401776112000:$
+/Library/Internet Plug-Ins/Unused:$
+1399139814000:$
+/Library/Internet Plug-Ins/SharePointWebKitPlugin.webplugin:$
+1282723860000:$
