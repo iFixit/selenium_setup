@@ -28,7 +28,7 @@ fi
 
 cp "$phantomFolder/bin/phantomjs" .
 rm -r "$phantomFileName"
-rm -r "$phantomFolder"
+rm -rf "$phantomFolder"
 
 unzip $driverName
-rm $driverName
+rm -f $driverName
