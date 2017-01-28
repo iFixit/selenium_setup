@@ -2,12 +2,18 @@
 os=`uname`
 if [ $os == "Darwin" ]; then
    driverName="chromedriver_mac64.zip"
-   phantomFileName="phantomjs-1.9.7-macosx.zip"
-   phantomFolder="phantomjs-1.9.7-macosx"
+
+   phantomVersion=1.9.7
+   phantomName="phantomjs"
+   phantomFileName="${phantomName}-${phantomVersion}-macosx.zip"
+   phantomFolder="${phantomName}-${$phantomVersion}-macosx"
 elif [ $os == "Linux" ]; then
    driverName="chromedriver_linux64.zip"
-   phantomFileName="phantomjs-2.1.1-linux-x86_64.tar.bz2"
-   phantomFolder="phantomjs-2.1.1-linux-x86_64"
+
+   phantomVersion=2.1.1
+   phantomName="phantomjs"
+   phantomFileName="${phantomName}-${phantomVersion}-linux-x86_64.tar.bz2"
+   phantomFolder="${phantomName}-${phantomVersion}-linux-x86_64"
 fi
 
 wget "http://bitbucket.org/ariya/phantomjs/downloads/$phantomFileName"
