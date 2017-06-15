@@ -18,7 +18,7 @@ fi
 
 wget "http://bitbucket.org/ariya/phantomjs/downloads/$phantomFileName"
 curl --remote-name "https://selenium-release.storage.googleapis.com/2.43/selenium-server-standalone-2.43.1.jar"
-curl --remote-name "https://chromedriver.storage.googleapis.com/2.24/$driverName"
+curl --remote-name "https://chromedriver.storage.googleapis.com/2.30/$driverName"
 
 if [ $os == "Darwin" ]; then
 	tar -zxf "$phantomFileName"
