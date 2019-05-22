@@ -7,8 +7,6 @@ curl --remote-name https://selenium-release.storage.googleapis.com/3.141/seleniu
 chrome_driver_version=$(curl "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$chrome_version")
 chromedriver_url="https://chromedriver.storage.googleapis.com/$chrome_driver_version/$file_name"
 
-# Override URL until Facebook's WebDriver gets fixed
-chromedriver_url="https://chromedriver.storage.googleapis.com/2.45/chromedriver_mac64.zip"
 echo "$chromedriver_url"
 curl -o "$file_name" "$chromedriver_url"
 
