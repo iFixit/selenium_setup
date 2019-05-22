@@ -1,34 +1,7 @@
 #!/bin/sh
-os=`uname`
-if [ $os == "Darwin" ]; then
-   driverName="chromedriver_mac64.zip"
 
-   phantomVersion=1.9.7
-   phantomName="phantomjs"
-   phantomFileName="${phantomName}-${phantomVersion}-macosx.zip"
-   phantomFolder="${phantomName}-${$phantomVersion}-macosx"
-elif [ $os == "Linux" ]; then
-   driverName="chromedriver_linux64.zip"
+curl --remote-name http://selenium-release.storage.googleapis.com/3.8/selenium-server-standalone-3.8.1.jar
+curl --remote-name https://chromedriver.storage.googleapis.com/2.38/chromedriver_mac64.zip
 
-   phantomVersion=2.1.1
-   phantomName="phantomjs"
-   phantomFileName="${phantomName}-${phantomVersion}-linux-x86_64.tar.bz2"
-   phantomFolder="${phantomName}-${phantomVersion}-linux-x86_64"
-fi
-
-wget "http://bitbucket.org/ariya/phantomjs/downloads/$phantomFileName"
-curl --remote-name "https://selenium-release.storage.googleapis.com/2.43/selenium-server-standalone-2.43.1.jar"
-curl --remote-name "https://chromedriver.storage.googleapis.com/2.38/$driverName"
-
-if [ $os == "Darwin" ]; then
-	tar -zxf "$phantomFileName"
-elif [ $os == "Linux" ]; then
-	tar -jxf "$phantomFileName"
-fi
-
-cp "$phantomFolder/bin/phantomjs" .
-rm -r "$phantomFileName"
-rm -rf "$phantomFolder"
-
-unzip $driverName
-rm -f $driverName
+unzip chromedriver_mac64.zip
+rm chromedriver_mac64.zip
