@@ -3,21 +3,36 @@
 # Crash if something breaks
 set -e
 
-# ensure we have the prerequisites (ssh command, port, ...)
-. ./_setup || exit 1
+main() {
+   local ssh_cmd="${ssh:-ssh cominor.com}"
+   local remote_port=$(read_selenium_port)
 
-port=`cat ~/.selenium_port`
-ssh_command=`cat ~/.ssh_command`
+   echo "Forwarding: remote:$remote_port to localhost:4444"
+   echo "You must set up remote host: echo $remote_port >~/.selenium_port"
 
-echo
-echo "Forwarding port: remote:$port to localhost:4444"
-ssh_line="$ssh_command -TNf -R $port:localhost:4444"
-$ssh_line >/dev/null /2>&1
-# Get pid of ssh background process -- tricky
-ssh_pid=`ps -A -o "pid command" | grep -F "$ssh_line" | head -n 1 | awk '{print $1}'`
-# kill the ssh process on exit
-trap "kill $ssh_pid" EXIT
+   local ssh_fwd_cmd="$ssh_cmd -TNf -R $remote_port:localhost:4444"
+   $ssh_fwd_cmd >/dev/null 2>&1 &
+   local ssh_pid=$!
 
-echo
-echo Launching Selenium...
-java -jar selenium-server-standalone-3.141.59.jar
+   if [ -n "ssh_pid" ]; then
+      echo "SSH PID = $ssh_pid"
+      trap "echo; kill $ssh_pid 1>/dev/null 2>&1" EXIT
+   fi
+
+   java -jar selenium-server-standalone-3.141.59.jar
+}
+
+read_selenium_port() {
+   local wd=$(dirname "$0")
+   local port_file="$wd/selenium_port"
+   local selenium_port=
+   if [ -r "$port_file" ]; then
+      selenium_port=$(< "$port_file")
+   else
+      selenium_port=$((4400 + $RANDOM % 101))
+      echo $selenium_port >"$port_file"
+   fi
+   echo $selenium_port
+}
+
+main "$@"
