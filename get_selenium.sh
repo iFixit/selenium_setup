@@ -4,7 +4,7 @@ extract_version() {
    sed -E 's/^.*[[:space:]]+(([[:digit:]]|\.)+)\.[[:digit:]]+[[:space:]]+$/\1/'
 }
 
-if [ $(uname -s) == "Linux" ]
+if [ $(uname -s) = "Linux" ]
 then
    chrome_path=google-chrome
    file_name=chromedriver_linux64.zip
