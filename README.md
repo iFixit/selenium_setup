@@ -1,3 +1,3 @@
 # selenium_setup
 
-Some instructions for setting up with the iFixit dev environment https://overlord.dozuki.com/Wiki/Setup_Selenium
+Some instructions for setting up with the iFixit dev environment https://overlord.dozuki.com/Guide/How+to+setup+Selenium+locally/786
