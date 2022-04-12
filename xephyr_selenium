@@ -1,0 +1,34 @@
+#!/bin/bash
+set -euo pipefail
+
+here="$(dirname "$0")"
+
+xephyr_pid=""
+cleanup() {
+   if [[ -n "$xephyr_pid" ]]
+   then
+      kill "$xephyr_pid"
+   fi
+}
+
+trap cleanup EXIT
+
+findDisplayNumber() {
+   #Based on https://superuser.com/a/127344
+   # local i=1
+   # while [ -f /tmp/.X$i-lock ]
+   # do
+   #    i=$(($i + 1))
+   # done
+   # echo $i
+
+   # Hack, because it seems like the above isn't a thing anymore:
+   echo $(($RANDOM + 1))
+}
+
+displayNumber=":$(findDisplayNumber)"
+echo "Starting Xephyr on $displayNumber"
+Xephyr -resizeable "$displayNumber" &
+xephyr_pid="$!"
+export DISPLAY="$displayNumber"
+"$here/selenium"
