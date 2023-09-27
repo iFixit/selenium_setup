@@ -24,4 +24,5 @@ zipfile="$(basename "$file_name")"
 curl -o "$zipfile" "$chromedriver_url"
 
 unzip $(basename $file_name .zip)
+mv chromedriver-*/chromedriver .
 rm -f "$zipfile"
