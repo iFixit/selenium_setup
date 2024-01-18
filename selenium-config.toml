@@ -1,0 +1,11 @@
+[distributor]
+reject-unsupported-caps = true # Reject a request immediately if the Grid does not support the requested capability.
+
+[node]
+detect-drivers = false # Ignore local drivers and use the ones specified in the driver configuration section.
+
+[[node.driver-configuration]]
+display-name = "chrome"
+max-sessions = 2
+webdriver-path = "./chromedriver"
+stereotype = '{"browserName": "chrome", "browserVersion": "v120.0"}' # Browser version is not used by the Grid, but it is used by the tests to determine which browser to use.
