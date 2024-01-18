@@ -17,7 +17,7 @@ curl -L --remote-name https://github.com/SeleniumHQ/selenium/releases/download/s
 
 chrome_version=$("$chrome_path" --version 2>&1 | extract_version)
 chrome_driver_version=$(curl "https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_$chrome_version")
-echo $chrome_driver_version
+echo "Driver Version" $chrome_driver_version
 chromedriver_url="https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/$chrome_driver_version/$file_name"
 
 echo "$chromedriver_url"
