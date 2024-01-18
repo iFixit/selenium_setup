@@ -6,6 +6,5 @@ detect-drivers = false # Ignore local drivers and use the ones specified in the 
 
 [[node.driver-configuration]]
 display-name = "chrome"
-max-sessions = 2
 webdriver-path = "./chromedriver"
 stereotype = '{"browserName": "chrome", "browserVersion": "<version>"}' # Browser version is not used by the Grid, but it is used by the tests to determine which browser to use.
