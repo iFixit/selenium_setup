@@ -27,3 +27,7 @@ curl -o "$zipfile" "$chromedriver_url"
 unzip $(basename $file_name .zip)
 mv chromedriver-*/chromedriver .
 rm -f "$zipfile"
+
+simple_chrome_version=$(echo "$chrome_version" | cut -d . -f 1)
+full_chrome_version="v$simple_chrome_version.0"
+sed "s/<version>/$full_chrome_version/g" selenium-config.template.toml > selenium-config.toml
