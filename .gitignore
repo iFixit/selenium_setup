@@ -3,5 +3,3 @@ chromedriver*
 
 # Ignore Selenium JAR files
 *.jar
-
-selenium-config.toml
