@@ -20,4 +20,4 @@ trap "kill $ssh_pid" EXIT
 
 echo
 echo Launching Selenium...
-java -jar selenium-server-standalone-3.141.59.jar
+java -jar selenium-server-4.16.1.jar standalone --config ./selenium-config.toml

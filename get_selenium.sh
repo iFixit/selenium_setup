@@ -13,10 +13,11 @@ else
    file_name=mac-x64/chromedriver-mac-x64.zip
 fi
 
+curl -L --remote-name https://github.com/SeleniumHQ/selenium/releases/download/selenium-4.16.0/selenium-server-4.16.1.jar
+
 chrome_version=$("$chrome_path" --version 2>&1 | extract_version)
-curl --remote-name https://selenium-release.storage.googleapis.com/3.141/selenium-server-standalone-3.141.59.jar
 chrome_driver_version=$(curl "https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_$chrome_version")
-echo $chrome_driver_version
+echo "Driver Version" $chrome_driver_version
 chromedriver_url="https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/$chrome_driver_version/$file_name"
 
 echo "$chromedriver_url"
