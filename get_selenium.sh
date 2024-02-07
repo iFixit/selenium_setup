@@ -13,7 +13,7 @@ else
    file_name=mac-x64/chromedriver-mac-x64.zip
 fi
 
-curl -L --remote-name https://github.com/SeleniumHQ/selenium/releases/download/selenium-4.16.0/selenium-server-4.16.1.jar
+curl -L --remote-name https://github.com/SeleniumHQ/selenium/releases/download/selenium-4.17.0/selenium-server-4.17.0.jar
 
 chrome_version=$("$chrome_path" --version 2>&1 | extract_version)
 chrome_driver_version=$(curl "https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_$chrome_version")
